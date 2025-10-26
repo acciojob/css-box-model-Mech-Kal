@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+    <style>
+        /* Base page styling to make the box stand out */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
+        /* Box Model Implementation */
+        .box-model-demo {
+            /* Margin: 20px around the box */
+            margin: 20px;
+            
+            /* Border: 15px solid blue */
+            border: 15px solid blue;
+            
+            /* Background Color: light blue */
+            background-color: lightblue;
+            
+            /* Padding: 50px inside the box */
+            padding: 50px;
+            
+            /* Width: Exactly 300px for the content area */
+            width: 300px; 
+            
+            /* Ensure the box behaves predictably */
+            box-sizing: content-box; 
+            
+            /* Text styling for readability */
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="box-model-demo">
+        This is a demo of box model, try to replicate this box model in Html & Css and pass all the test cases.
+    </div>
 
 </body>
-
 </html>
